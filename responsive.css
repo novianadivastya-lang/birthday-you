@@ -1,0 +1,9 @@
+@media (max-width: 480px) {
+  .page { padding: 35px 22px; }
+  .photo-frame { height: 310px; }
+  .eyebrow { letter-spacing: 3px; }
+  .bottom-note { font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

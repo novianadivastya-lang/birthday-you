@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1935">
+  <title>A Little Universe for You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animation.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <main>
+    <section class="page active" id="opening">
+      <div class="content opening-content">
+        <span class="eyebrow">A LITTLE SOMETHING FOR YOU</span>
+        <h1>Hey, Birthday Boy!</h1>
+        <p>Someone prepared a little surprise just for you.</p>
+        <button class="primary-btn" data-go="birthday" <span>Open Your Surprise</span> </button>
+      </div>
+      <span class="bottom-note"> From Roro Jonggrang ♡</span>
+    </section>
+
+    <section class="page" id="birthday">
+      <div class="content">
+        <span class="eyebrow">A SPECIAL DAY</span>
+        <h2>Happy Birthday Mas Nofal!</h2>
+        <figure class="photo-frame">
+          <img src="birthday-photo.jpeg" alt="Foto yang berulang tahun"
+               onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+          <div class="photo-fallback" hidden>Your photo goes here</div>
+        </figure>
+        <h3>Another year, another story.</h3>
+        <p class="description">Selamat ulang tahun, Mas Nofal. Semoga di umur yang sekarang semuanya makin baik, ya. Apa pun yang lagi kamu usahain semoga bisa berjalan lancar dan hasilnya sesuai harapan. Jangan lupa jaga kesehatan, jangan terlalu sibuk sampai lupa istirahat. Semoga hari ini menyenangkan buat kamu.</p>
+        <button class="primary-btn" data-go="wishes">Next</button>
+      </div>
+    </section>
+
+    <section class="page" id="wishes">
+      <div class="content">
+        <span class="eyebrow">A FEW WORDS FOR YOU</span>
+        <h2>Little Wishes</h2>
+        <p class="description">Here are some little wishes I hope come true for you.</p>
+        <div class="wish-card"><span class="wish-icon">✦</span><p id="wishText">Semoga kebahagiaan selalu menemukan jalannya untuk datang ke kamu.</p></div>
+        <button class="secondary-btn" id="anotherWish">Aamiin, semoga ya!</button>
+        <button class="primary-btn" data-go="letter">Lanjut Yuk!</button>
+      </div>
+    </section>
+
+    <section class="page" id="letter">
+      <div class="content">
+        <span class="eyebrow">SOMETHING FROM THE HEART</span>
+        <h2>A Letter for You</h2>
+        <p class="description">Some words are better written than left unsaid.</p>
+        <div class="envelope" id="envelope">
+          <div class="envelope-icon">✉</div>
+          <p>A little letter for you</p>
+          <button class="secondary-btn" id="openLetter">Buka Pesannya </button>
+        </div>
+        <article class="letter-content" id="letterContent" hidden>
+          <p class="letter-greeting">Hai, Mas Nofal</p>
+          <p>Selamat ulang tahun! Semoga babak baru dalam hidupmu ini membawa lebih banyak kebahagiaan, kesempatan baru, dan pengalaman-pengalaman menyenangkan.</p>
+          <p>Aku harap di umur yang sekarang ada banyak hal baik yang bisa kamu temuin. Semoga apa pun yang lagi kamu kejar bisa tercapai, dan kalau ada hal yang belum sesuai rencana, semoga kamu tetap punya semangat buat nyoba lagi.
+Jangan lupa menikmati hal-hal kecil juga. Kadang kita terlalu sibuk mikirin banyak hal sampai lupa kalau ada banyak hal sederhana yang sebenarnya patut disyukuri.
+Anyway, semoga kamu suka sama kejutan kecil ini. Enjoy your day!</p>
+          <p>Wishing you nothing but the best.</p>
+          <p class="signature">From Roro Jonggrang ♡</p>
+        </article>
+        <button class="primary-btn" data-go="surprise"><span>One Last Thing </span></button>
+      </div>
+    </section>
+
+    
+<section class="page" id="surprise">
+  <div class="content">
+    <span class="eyebrow">KHUSUS BUAT KAMU</span>
+
+    <h2>Satu Kejutan Terakhir</h2>
+
+    <p class="description">
+      Masih ada satu hal kecil yang ingin aku kasih buat kamu.
+    </p>
+
+    <div class="gift-box" id="giftBox" aria-hidden="true">♡</div>
+
+    <button class="primary-btn" id="openGift">
+      Buka Kejutan
+    </button>
+
+    <div class="final-message" id="finalMessage" hidden>
+
+      <div class="creator-photo-frame">
+        <img
+          src="creator.jpeg"
+          alt="Foto orang yang membuat website ini"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"
+        >
+        <div class="creator-photo-fallback">
+          Foto pembuat website
+        </div>
+      </div>
+
+      <h3>Dear, Mas Nofal!</h3>
+
+      <p>
+        Oh iya, sebelum selesai, ada satu hal lagi yang mau aku bilang.
+      </p>
+
+      <p>
+       Maaf ya, aku belum bisa kasih kamu banyak kado atau sesuatu yang mewah di hari spesialmu ini. Jadi, aku kepikiran buat bikin sesuatu sederhana yang bisa kamu simpan sebagai kenangan.
+      </p>
+
+      <p>
+        Semoga hal kecil ini tetap bisa bikin kamu senang
+        dan jadi salah satu kenangan manis di hari ulang
+        tahunmu.
+      </p>
+
+      <span class="birthday-signature">
+        Selamat ulang tahun! ♡
+      </span>
+    </div>
+
+    <button class="secondary-btn replay-btn" id="replay" hidden>
+      ↻ Mulai dari Awal
+    </button>
+    
+  </div>
+</section>
+
+  </main>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.page.active .content { animation: fadeInUp .65s ease both; }
+.gift-box.opened { animation: giftPop .55s ease; }
+@keyframes giftPop {
+  0% { transform: scale(.8); }
+  65% { transform: scale(1.25) rotate(12deg); }
+  100% { transform: scale(1.1) rotate(0); }
+}
